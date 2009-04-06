@@ -1,5 +1,6 @@
-# The following requirement was breaking compatibility with the JSON gem (JN/PE)
+# Requiring json/add/rails was breaking compatibility with the JSON gem; fall back to plain json (JN/PE)
 #require "json/add/rails"
+require "json"
 
 class Contacts
   class Gmail < Base
